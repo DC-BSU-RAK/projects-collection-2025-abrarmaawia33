@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="537dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bginstrc"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="92dp">
+
+        <TextView
+            android:id="@+id/popupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abyssinica_sil"
+            android:gravity="center"
+            android:paddingBottom="50dp"
+            android:text="Mini Flix"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/popupText"
+            android:layout_width="307dp"
+            android:layout_height="317dp"
+            android:fontFamily="@font/abyssinica_sil"
+            android:text="Mini Flix is a movie app that brings you the latest and upcoming movies all in one place. You can explore a variety of films, view detailed information about each one, and save your favorites. Once you find a movie you’re interested in, the app provides a direct link to watch it on platforms like Netflix."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/closePopup"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/menu"
+            android:contentDescription="Close popup" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

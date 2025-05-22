@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resultscreen_popup">
+
+    <TextView
+        android:id="@+id/sushiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <TextView
+        android:id="@+id/sushiResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <ImageView
+        android:id="@+id/sushiImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="277dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="167dp"
+        android:layout_height="72dp"
+        android:text="close"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="583dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

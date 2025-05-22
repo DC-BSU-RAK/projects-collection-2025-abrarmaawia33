@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background = "@drawable/mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/menuButton"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="165dp"
+        android:backgroundTint="#a3b86a"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/salmon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/menubutton" />
+
+    <ImageView
+        android:id="@+id/avocado"
+        android:layout_width="104dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cucumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        app:srcCompat="@drawable/avocado" />
+
+    <ImageView
+        android:id="@+id/cucumber"
+        android:layout_width="114dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/avocado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339"
+        app:srcCompat="@drawable/cucumber" />
+
+    <ImageView
+        android:id="@+id/salmon"
+        android:layout_width="113dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/cucumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337"
+        app:srcCompat="@drawable/salmon" />
+
+    <ImageView
+        android:id="@+id/tuna"
+        android:layout_width="102dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/egg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avocado"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tuna" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Pick three ingredents"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/cucumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754" />
+
+    <Button
+        android:id="@+id/donebutton"
+        android:layout_width="133dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#A3B86A"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Done"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <ImageView
+        android:id="@+id/egg"
+        android:layout_width="109dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shrimp"
+        app:layout_constraintTop_toBottomOf="@+id/cucumber"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/egg" />
+
+    <ImageView
+        android:id="@+id/shrimp"
+        android:layout_width="114dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salmon"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/shrimp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_avocado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Avocado"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tuna"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_cucumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avocado"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkbox_cucumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Cucumber"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/egg"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_salmon"
+        app:layout_constraintTop_toBottomOf="@+id/cucumber"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <CheckBox
+        android:id="@+id/checkbox_salmon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Salmon"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/shrimp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salmon"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <CheckBox
+        android:id="@+id/checkbox_tuna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Tuna"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_egg"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tuna"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <CheckBox
+        android:id="@+id/checkbox_egg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Eggs"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/donebutton"
+        app:layout_constraintEnd_toStartOf="@+id/checkbox_shrimp"
+        app:layout_constraintTop_toBottomOf="@+id/egg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkbox_shrimp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Shrimp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shrimp"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
